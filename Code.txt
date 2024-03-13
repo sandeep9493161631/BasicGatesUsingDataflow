@@ -1,0 +1,14 @@
+
+module basicgatesusingdataflow(
+    input a,b,
+    output andout,orout,xorout,nandout,norout,xnorout
+    );
+    //DataFlow
+    assign andout = a&b;//And Gate
+    assign orout = a|b;//Or Gate
+    assign xorout = a^b;//Xor Gate
+    assign nandout = !(a&b);//Nand Gate+
+    assign norout = !(a|b);//Nor Gate
+    assign xnorout = !(a^b);//Xnor Gate
+    
+endmodule
